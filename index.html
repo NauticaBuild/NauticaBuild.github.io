@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nautica is a leading ship maintenance and service company, specializing in marine construction, ship repairs, and technical supply. Navigate excellence in marine construction with Nautica."
+    />
+    <meta
+      name="keywords"
+      content="Nautica, ship maintenance, ship service, marine construction, ship repairs, technical supply"
+    />
+    <meta name="author" content="Nautica Builds" />
+    <meta
+      property="og:title"
+      content="Nautica | Ship Maintenance and Service"
+    />
+    <meta
+      property="og:description"
+      content="Navigating excellence in marine construction. Nautica provides ship maintenance, repairs, and technical supply services."
+    />
+    <meta property="og:url" content="https://nauticabuild.com" />
+    <meta property="og:type" content="website" />
+    <title>Nautica Build</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "main"
+          "footer";
+        grid-template-rows: 80px auto auto;
+        min-height: 100vh;
+      }
+      header {
+        grid-area: "header";
+      }
+      main {
+        grid-area: "main";
+      }
+      footer {
+        grid-area: "footer";
+      }
+    </style>
+  </head>
+  <body>
+    <header class="shadow-lg">
+      <nav
+        class="flex items-center justify-between flex-wrap bg-white p-4 fixed top-0 w-full z-50 drop-shadow-lg"
+      >
+        <a href="#">
+          <div class="flex items-center flex-shrink-0">
+            <img src="./public/logo.svg" alt="" />
+            <span class="font-semibold text-xl mx-4">Nautica Build</span>
+          </div>
+        </a>
+        <div class="block lg:hidden">
+          <button
+            class="flex items-center w-8 h-8 rounded text-black"
+            onclick="toggleMenu()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+              id="hamBurger"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8 hidden"
+              id="closeBtn"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="w-full hidden flex-grow lg:flex lg:justify-end lg:items-center lg:w-auto"
+          id="navbar"
+        >
+          <div class="mt-8">
+            <a href="#" class="block my-4 lg:inline-block lg:mt-0 mx-4">
+              Home
+            </a>
+            <hr class="md:hidden" />
+            <a href="#services" class="block my-4 lg:inline-block lg:mt-0 mx-4">
+              Services
+            </a>
+            <hr class="md:hidden" />
+            <a href="#aboutUs" class="block my-4 lg:inline-block lg:mt-0 mx-4">
+              About Us
+            </a>
+            <hr class="md:hidden" />
+            <a
+              href="#contactUs"
+              class="block my-4 lg:inline-block lg:mt-0 mx-4"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative text-white h-[70vh] lg:h-[90vh]">
+        <div
+          class="absolute z-10 h-full flex flex-col justify-center lg:w-4/5 lg:ml-8"
+        >
+          <h2 class="text-4xl lg:text-6xl font-bold mx-8 lg:w-3/4">
+            Navigating Excellence in Marine Construction.
+          </h2>
+          <h3 class="text-xl mx-8 my-6">
+            Leading Ship Maintenance and Service Provider
+          </h3>
+          <a href="https://wa.me/+919995245672?text=hi">
+            <button
+              class="bg-[hsl(204,68%,47%)] hover:bg-[hsl(204,68%,60%)] flex py-3 px-4 rounded-xl mx-8 items-center space-x-2"
+            >
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>Contact Us</div>
+            </button>
+          </a>
+        </div>
+        <div class="absolute h-full w-full">
+          <img
+            src="./public/hero.webp"
+            class="h-full lg:w-full object-cover"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </section>
+      <section
+        class="shadow-lg mb-20 lg:my-20 mx-4 lg:m-0 rounded-xl p-8 lg:flex lg:w-2/3 lg:mx-auto lg:relative lg:-top-10 bg-white"
+      >
+        <div class="lg:flex-1 lg:px-8 mx-auto">
+          <div class="my-12">
+            <h2 class="flex space-x-2 items-center my-4">
+              <div class="w-12 h-12">
+                <img src="./public/mission.svg" class="w-full h-full" alt="" />
+              </div>
+              <span class="text-2xl font-bold lg:text-3xl">Our Mission</span>
+            </h2>
+            <p class="text-justify lg:text-lg">
+              Our Mission is striving to achieve excellence in every aspect of
+              our business, from engineering and project management to safety
+              and customer service. We are committed to fostering a culture of
+              innovation, collaboration, and social responsibility that
+              contributes to the development of the maritime industry and the
+              communities we serve.
+            </p>
+          </div>
+          <div class="my-12">
+            <h2 class="flex space-x-2 items-center my-4">
+              <div class="w-12 h-12">
+                <img src="./public/vision.svg" class="w-full h-full" alt="" />
+              </div>
+              <span class="text-2xl font-bold lg:text-3xl">Our Vision</span>
+            </h2>
+            <p class="text-justify lg:text-lg">
+              To create innovative and sustainable solutions for the maritime
+              industry that meet the highest standards of quality, performance,
+              and environmental responsibility.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center lg:flex-1">
+          <img
+            src="./public/college-2.jpg"
+            class="w-full max-w-[400px] object-contain"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="container mx-auto">
+        <div class="w-fit mx-auto">
+          <h2 class="text-3xl font-bold text-center my-4">Our Core Values</h2>
+          <div class="h-1 rounded-lg bg-blue-400 w-4/5 mx-auto">&nbsp;</div>
+        </div>
+        <div class="lg:flex lg:flex-wrap lg:justify-center lg:w-4/5 mx-auto">
+          <div
+            style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px"
+            class="w-[80%] mx-auto p-8 rounded-xl text-center my-10 card max-w-[320px] lg:mx-8"
+          >
+            <div class="w-fit mx-auto">
+              <div
+                class="bg-[#278ACB] flex justify-center items-center p-4 w-fit rounded-full"
+              >
+                <img src="./public/mdi-thumbs-up.svg" class="w-8 h-8" alt="" />
+              </div>
+            </div>
+            <div>
+              <div class="w-1/2 mx-auto">
+                <h3 class="text-xl font-bold text-center my-2 lg:text-2xl">
+                  Quality
+                </h3>
+                <div class="h-1 rounded-lg bg-blue-400 w-4/5 mx-auto">
+                  &nbsp;
+                </div>
+              </div>
+            </div>
+            <div class="lg:text-lg my-4">
+              We deliver products and services that meet or exceed the
+              expectations of our customers and stakeholders.
+            </div>
+          </div>
+
+          <div
+            style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px"
+            class="w-[80%] mx-auto p-8 rounded-xl text-center my-10 card max-w-[320px] lg:mx-8"
+          >
+            <div class="w-fit mx-auto">
+              <div
+                class="bg-[#278ACB] flex justify-center items-center p-4 w-fit rounded-full"
+              >
+                <img src="./public/mdi-idea.svg" class="w-8 h-8" alt="" />
+              </div>
+            </div>
+            <div>
+              <div class="w-1/2 mx-auto">
+                <h3 class="text-xl font-bold text-center my-2 lg:text-2xl">
+                  Innovation
+                </h3>
+                <div class="h-1 rounded-lg bg-blue-400 w-4/5 mx-auto">
+                  &nbsp;
+                </div>
+              </div>
+            </div>
+            <div class="lg:text-lg my-4">
+              We embrace new ideas and technologies that enhance our
+              capabilities and competitiveness.
+            </div>
+          </div>
+
+          <div
+            style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px"
+            class="w-[80%] mx-auto p-8 rounded-xl text-center my-10 card max-w-[320px] lg:mx-8"
+          >
+            <div class="w-fit mx-auto">
+              <div
+                class="bg-[#278ACB] flex justify-center items-center p-4 w-fit rounded-full"
+              >
+                <img
+                  src="./public/mingcute-safety-certificate-fill.svg"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="w-1/2 mx-auto">
+                <h3 class="text-xl font-bold text-center my-2 lg:text-2xl">
+                  Safety
+                </h3>
+                <div class="h-1 rounded-lg bg-blue-400 w-4/5 mx-auto">
+                  &nbsp;
+                </div>
+              </div>
+            </div>
+            <div class="lg:text-lg my-4">
+              We ensure the health and well-being of our employees, contractors,
+              and partners by following the best practices and standards in our
+              industry.
+            </div>
+          </div>
+
+          <div
+            style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px"
+            class="w-[80%] mx-auto p-8 rounded-xl text-center my-10 card max-w-[320px] lg:mx-8"
+          >
+            <div class="w-fit mx-auto">
+              <div
+                class="bg-[#278ACB] flex justify-center items-center p-4 w-fit rounded-full"
+              >
+                <img
+                  src="./public/fa-6-solid-handshake-simple.svg"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="w-1/2 mx-auto">
+                <h3 class="text-xl font-bold text-center my-2 lg:text-2xl">
+                  Collaboration
+                </h3>
+                <div class="h-1 rounded-lg bg-blue-400 w-4/5 mx-auto">
+                  &nbsp;
+                </div>
+              </div>
+            </div>
+            <div class="lg:text-lg my-4">
+              We work as a team with our customers, suppliers, and partners to
+              achieve mutual success and satisfaction.
+            </div>
+          </div>
+
+          <div
+            style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px"
+            class="w-[80%] mx-auto p-8 rounded-xl text-center my-10 card max-w-[320px] lg:mx-8"
+          >
+            <div class="w-fit mx-auto">
+              <div
+                class="bg-[#278ACB] flex justify-center items-center p-4 w-fit rounded-full"
+              >
+                <img src="./public/fa-solid-hands.svg" class="w-8 h-8" alt="" />
+              </div>
+            </div>
+            <div>
+              <div class="w-1/2 mx-auto">
+                <h3 class="text-xl font-bold text-center my-2 lg:text-2xl">
+                  Responsibility
+                </h3>
+                <div class="h-1 rounded-lg bg-blue-400 w-4/5 mx-auto">
+                  &nbsp;
+                </div>
+              </div>
+            </div>
+            <div class="lg:text-lg my-4">
+              We act with integrity, accountability, and respect for the
+              environment and the society we operate in.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="my-20 flex flex-col items-center justify-center mx-auto container"
+        id="aboutUs"
+      >
+        <div
+          class="text-2xl lg:text-4xl font-bold w-4/5 mx-auto flex my-8 lg:relative lg:-bottom-24"
+        >
+          <span class="bg-[#00609E]">&nbsp;</span>
+          <h2 class="mx-3">WHO WE ARE</h2>
+        </div>
+        <div class="lg:grid grid-cols-2 w-4/5 items-center">
+          <div class="lg:order-2 place-self-end">
+            <img
+              src="./public/image-3.png"
+              class="lg:w-[580px] w-full"
+              alt=""
+            />
+          </div>
+          <div class="my-4 text-justify lg:order-1">
+            <p class="lg:text-lg lg:mr-20">
+              Nautica is a leading ship maintenance and service company that
+              specializes in providing exceptional services and supplies to the
+              maritime industry. With a strong commitment to excellence, we have
+              established ourselves as a trusted partner in navigating the
+              waters of marine construction.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="container mx-auto lg:text-lg">
+        <div class="text-2xl font-bold w-4/5 mx-auto flex my-8 lg:text-4xl">
+          <span class="bg-[#00609E]">&nbsp;</span>
+          <h2 class="mx-3">OUR SERVICES</h2>
+        </div>
+
+        <div class="lg:flex lg:flex-wrap lg:justify-center lg:w-4/5 mx-auto">
+          <div
+            class="my-20 w-[80%] mx-auto p-8 rounded-xl card max-w-[350px] lg:mx-8"
+            style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px"
+          >
+            <div>
+              <div>
+                <div>
+                  <img src="./public/construction.png" />
+                </div>
+                <p class="font-bold text-center my-4">
+                  Marine Construction Services
+                </p>
+              </div>
+            </div>
+            <div>
+              <ul class="ml-4 list-disc">
+                <li>Steel Fabrication - Hull & Superstructure</li>
+                <li>Hydraulic Services</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="my-20 w-[80%] mx-auto p-8 rounded-xl card max-w-[350px] lg:mx-8"
+            style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px"
+          >
+            <div class="flex flex-col items-center">
+              <img src="./public/repair.png" />
+              <div>
+                <p class="font-bold text-center my-4">
+                  Ship Repairs/Maintenance
+                </p>
+              </div>
+            </div>
+            <div>
+              <ul class="list-disc">
+                <li>Steel Renewals - Internal & External</li>
+                <li>Hydro blasting, Painting & Tank Cleaning</li>
+                <li>Mechanical Maintenance</li>
+                <li>Overhauling Pump & Motor</li>
+                <li>Electrical & Piping Repairs - Steel Works</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="my-20 w-[80%] mx-auto p-8 rounded-xl card max-w-[350px] lg:mx-4"
+            style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px"
+          >
+            <div>
+              <img src="./public/supply.png" />
+              <div>
+                <p class="font-bold text-center my-4">
+                  Ship Chandelling & Technical Supply
+                </p>
+              </div>
+            </div>
+            <div>
+              <ul class="ml-4 list-disc">
+                <li>Spare Parts & Machinery Supply</li>
+                <li>Technical & Electrical Stores Supply</li>
+                <li>Deck Safety Store Supply</li>
+                <li>Marine Chemicals like Paint Supply</li>
+                <li>Cloth & Linen Products</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-20">
+        <div
+          class="relative h-[60vh] lg:h-[80vh] flex flex-col justify-center items-center"
+        >
+          <div class="bg-[#005f9e] absolute h-full lg:w-full">
+            <img
+              src="./public/image-4.png"
+              class="w-full h-full object-cover"
+              style="mix-blend-mode: multiply"
+              alt=""
+            />
+          </div>
+          <div class="absolute text-white text-center">
+            <div>
+              <p
+                class="text-xl font-semibold w-4/5 lg:w-2/3 mx-auto lg:text-3xl"
+              >
+                Nautica is a leading ship maintenance and service company that
+                specializes in providing exceptional services and supplies to
+                the maritime industry
+              </p>
+            </div>
+            <div>
+              <p class="w-4/5 lg:w-1/2 lg:text-xl mx-auto my-10">
+                With a strong commitment to excellence, we have established
+                ourselves as a trusted partner in navigating the waters of
+                marine construction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-4/5 mx-auto mb-10 shadow-lg p-6 rounded-xl relative -top-16 bg-white container lg:text-lg lg:p-16"
+      >
+        <div class="text-lg font-bold mx-auto flex my-8 mt-2 lg:text-xl">
+          <span class="bg-[#00609E]">&nbsp;</span>
+          <h2 class="mx-3">WHY NAUTICA</h2>
+        </div>
+        <div class="lg:grid grid-cols-2">
+          <div>
+            <div>
+              <p class="text-lg font-medium lg:text-2xl">
+                We stands out as a leading ship maintenance and service company
+                in the maritime industry
+              </p>
+            </div>
+            <div class="my-8">
+              <p class="text-gray-500">
+                Nautica stands out as a leading ship maintenance and service
+                company in the maritime industry due to several compelling
+                factors that set it apart from the competition:
+              </p>
+            </div>
+            <div class="text-lg font-semibold mb-8">
+              <ul class="space-y-4">
+                <li class="flex items-center">
+                  <span class="bg-[#278ACB] p-2 rounded-full mr-2 w-10 h-10">
+                    <img
+                      src="./public/mdi-thumbs-up.svg"
+                      class="w-full h-full"
+                      alt=""
+                    />
+                  </span>
+
+                  <span>Expertise and experience</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="bg-[#278ACB] p-2 rounded-full mr-2 w-10 h-10">
+                    <img
+                      src="./public/icon-park-solid-notes.svg"
+                      class="w-full h-full"
+                      alt=""
+                    />
+                  </span>
+                  <span>Comprehensive service</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="bg-[#278ACB] p-2 rounded-full mr-2 w-10 h-10">
+                    <img
+                      src="./public/fa-6-solid-handshake-simple.svg"
+                      class="w-full h-full"
+                      alt=""
+                    />
+                  </span>
+                  <span>Commitment to excellence</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="bg-[#278ACB] p-2 rounded-full mr-2 w-10 h-10">
+                    <img
+                      src="./public/mdi-worker.svg"
+                      class="w-full h-full"
+                      alt=""
+                    />
+                  </span>
+                  <span>Skilled professionals</span>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex">
+                    <span class="bg-[#278ACB] p-2 rounded-full mr-2 w-10 h-10">
+                      <img
+                        src="./public/mingcute-safety-certificate-fill.svg"
+                        class="w-full h-full"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <span>Safety and environmental stewardship</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <img
+              src="./public/college-1.jpg"
+              class="w-full max-w-[420px] object-contain"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer style="background-color: #005f9e" class="text-white">
+      <div
+        class="mx-auto py-12 w-4/5 lg:w-[65%] lg:grid grid-cols-3 place-items-center"
+      >
+        <div>
+          <div>
+            <h2 class="text-3xl font-semibold">Get in touch with us</h2>
+          </div>
+          <div class="lg:text-lg my-4">
+            <p>
+              Have a question or need assistance with ship maintenance and
+              service? Contact Nautica today. Our expert team is here to help
+              you navigate excellence in marine construction. Get in touch now
+            </p>
+          </div>
+          <div class="flex justify-center lg:block">
+            <a href="mailto:info@nauticabuild.com">
+              <button
+                class="bg-white text-black flex p-4 px-6 space-x-4 rounded-xl m-4 lg:m-0"
+              >
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                    />
+                    <path
+                      d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                    />
+                  </svg>
+                </div>
+                <div>Mail</div>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="hidden lg:block h-full w-[1px] bg-white">&nbsp;</div>
+
+        <div>
+          <div class="flex my-6">
+            <div class="flex">
+              <span class="bg-[#278ACB] p-2 rounded-full mr-2 w-10 h-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                  />
+                  <path
+                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <div>Email:</div>
+              <div>info@nauticabuild.com</div>
+            </div>
+          </div>
+          <div class="flex my-6">
+            <div class="flex">
+              <span class="bg-[#278ACB] p-2 rounded-full mr-2 w-10 h-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <div>Call Us:</div>
+              <div>+91 99952 45672</div>
+            </div>
+          </div>
+          <div class="flex my-6">
+            <div class="flex">
+              <span class="bg-[#278ACB] p-2 rounded-full mr-2 w-10 h-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <div>Address:</div>
+              <div>
+                14/291M, Suite 82A, 1st Floor, A Square, Edathala PO,
+                Kuzhivelippady, Ernakulam, Kerala - 683561
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="contactUs" class="min-h-[4px] bg-white w-screen"></section>
+      <div class="flex w-full justify-center py-6 px-4">
+        <div>&copy; Nautica 2023 | All rights reserved</div>
+        <div class="hidden">Social Links</div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navBar = document.querySelector("#navbar");
+        const closeBtn = document.querySelector("#closeBtn");
+        const hamBurger = document.querySelector("#hamBurger");
+        navBar.classList.toggle("hidden");
+        closeBtn.classList.toggle("hidden");
+        hamBurger.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
